@@ -673,6 +673,18 @@ video {
   width: 80%;
 }
 
+.w-32 {
+  width: 8rem;
+}
+
+.w-40 {
+  width: 10rem;
+}
+
+.w-60 {
+  width: 15rem;
+}
+
 .max-w-md {
   max-width: 28rem;
 }
