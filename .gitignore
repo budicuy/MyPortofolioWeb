@@ -1,1 +1,3 @@
 /node_modules
+# exlude package-lock.json
+package-lock.json
