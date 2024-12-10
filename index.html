@@ -274,12 +274,11 @@
         $(document).ready(function () {
             var swiper = new Swiper(".mySwiper", {
                 autoHeight: true,
-                grabCursor: true,
+                slidesPerView: 2,
                 spaceBetween: 10,
                 centeredSlides: true,
-                slidesPerView: "auto",
                 autoplay: {
-                    delay: 2500,
+                    delay: 1500,
                 },
             });
         });
@@ -568,7 +567,7 @@
             // Membuat elemen sertifikat
             certificates.forEach(cert => {
                 $('#swiper-wrapper').append(`
-            <div class="swiper-slide max-w-[80%]">
+            <div class="swiper-slide">
                 <a href="${cert.href}">
                     <div class="mx-auto overflow-hidden rounded-md">
                         <img src="${cert.src}" alt="${cert.alt}">
