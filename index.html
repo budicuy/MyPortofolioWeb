@@ -128,7 +128,7 @@
 
                 <div class="flex items-center justify-center">
                     <div x-data="{ openTab: 2 }">
-                        <div class="max-w-md mx-auto">
+                        <div class="max-w-sm px-2 mx-auto md:max-w-md">
                             <div class="flex p-2 mb-4 space-x-4 bg-white rounded-lg shadow-md">
                                 <button x-on:click="openTab = 1" :class="{ 'bg-blue-600 text-white': openTab === 1 }"
                                     class="flex-1 px-4 py-2 transition-all duration-300 rounded-md focus:outline-none focus:shadow-outline-blue">Project</button>
@@ -207,7 +207,7 @@
                                 <h3 class="mt-2 text-lg font-bold text-blue-600">
                                     Sertificate
                                 </h3>
-                                <div class="mt-2 swiper mySwiper">
+                                <div class="mt-2 overflow-hidden swiper mySwiper">
                                     <div class="swiper-wrapper" id="swiper-wrapper"></div>
                                 </div>
 
