@@ -570,8 +570,8 @@
                 $('#swiper-wrapper').append(`
             <div class="swiper-slide">
                 <a href="${cert.href}">
-                    <div class="mx-auto overflow-hidden rounded-md">
-                        <img src="${cert.src}" alt="${cert.alt}">
+                    <div class="overflow-hidden rounded-md aspect-[4/3] border border-black">
+                        <img src="${cert.src}" alt="${cert.alt}" class="block object-cover min-w-full min-h-full">
                     </div>
                 </a>
             </div>
