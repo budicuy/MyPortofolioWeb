@@ -27,8 +27,10 @@
                     BUDIANNOR
                 </h1>
                 <p class="text-sm font-semibold text-center text-black/70">
-                    <span class="text-purple-600">Web Developer</span> & <span class="text-yellow-300">UI/UX
-                        Designer</span>
+                    <span>
+                        <b class="text-yellow-400">Web Developer</b> | <b class="text-red-500">UI/UX Designer</b> |
+                        <b class="text-purple-500">Photography</b>
+                    </span>
                 </p>
 
 
@@ -135,7 +137,7 @@
                                 <button x-on:click="openTab = 2" :class="{ 'bg-blue-600 text-white': openTab === 2 }"
                                     class="flex-1 px-4 py-2 transition-all duration-300 rounded-md focus:outline-none focus:shadow-outline-blue">About</button>
                                 <button x-on:click="openTab = 3" :class="{ 'bg-blue-600 text-white': openTab === 3 }"
-                                    class="flex-1 px-4 py-2 transition-all duration-300 rounded-md focus:outline-none focus:shadow-outline-blue">Design</button>
+                                    class="flex-1 px-4 py-2 transition-all duration-300 rounded-md focus:outline-none focus:shadow-outline-blue">Sertificate</button>
                             </div>
 
                             <div x-show="openTab === 1"
@@ -205,21 +207,13 @@
                                 </div>
 
                                 <h3 class="mt-2 text-lg font-bold text-blue-600">
-                                    Sertificate <span class="text-xs">(Click to view)</span>
-                                </h3>
-                                <div class="mt-2 overflow-hidden swiper mySwiper">
-                                    <div class="swiper-wrapper" id="swiper-wrapper"></div>
-                                </div>
-
-
-                                <h3 class="mt-2 text-lg font-bold text-blue-600">
                                     Organization
                                 </h3>
 
                                 <div class="ml-4 text-sm text-gra">
                                     <ul class="list-disc">
                                         <li>Badan Eksekutif Mahasiswa Periode 2024 - 2025</li>
-                                        <li>Komunitas ITECH Gen 4 Periode 2023 - 2026</li>
+                                        <li>Komunitas ITECH Gen 3 Periode 2023 - 2026</li>
                                         <li>KSR PMI Unit POLIBAN Periode 2023 - 2026</li>
                                     </ul>
                                 </div>
@@ -243,11 +237,9 @@
 
                             </div>
 
-
-
                             <div x-show="openTab === 3"
                                 class="p-4 transition-all duration-300 bg-white border-l-4 border-blue-600 rounded-lg shadow-md">
-                                <div class="grid gap-2 md:grid-cols-2" id="designs"></div>
+                                <div class="grid gap-2" id="designs"></div>
 
                             </div>
                         </div>
@@ -297,8 +289,9 @@
                 { title: "Telkom Digiup.id", role: "Web Developer" },
                 { title: "VSGA BPSDM KOMINFO", role: "Junior Mobile Developer" },
                 { title: "VSGA BPSDM KOMINFO", role: "Junior Web Developer" },
-                { title: "KSR PMI", role: "Pelatihan 120 Jam" },
-                { title: "Badan Eksekutif Mahasiswa", role: "Kementerian Dalam Negeri" }
+                { title: "KSR PMI UNIT POLIBAN", role: "Pelatihan 120 Jam" },
+                { title: "Badan Eksekutif Mahasiswa POLIBAN", role: "Menteri Komunikasi dan Informasi" },
+                { title: "ITECH POLIBAN", role: "Ketua Umum" }
             ];
 
             // Generate daftar pengalaman
@@ -308,23 +301,57 @@
 
             // Data gambar design
             const designs = [
-                { src: "/assets/img/design/design_1.jpg", alt: "Design 1" },
-                { src: "/assets/img/design/design_2.jpg", alt: "Design 2" },
-                { src: "/assets/img/design/design_3.jpg", alt: "Design 3" },
-                { src: "/assets/img/design/design_4.jpg", alt: "Design 4" },
-                { src: "/assets/img/design/design_5.jpg", alt: "Design 5" },
-                { src: "/assets/img/design/design_6.jpg", alt: "Design 6" }
+                { src: "/assets/img/sertificate/sertifikat (1).png", alt: "Sertificate" },
+                { src: "/assets/img/sertificate/sertifikat (2).png", alt: "Sertificate" },
+                { src: "/assets/img/sertificate/sertifikat (3).png", alt: "Sertificate" },
+                { src: "/assets/img/sertificate/sertifikat (4).png", alt: "Sertificate" },
+                { src: "/assets/img/sertificate/sertifikat (5).png", alt: "Sertificate" },
+                { src: "/assets/img/sertificate/sertifikat (6).png", alt: "Sertificate" },
+                { src: "/assets/img/sertificate/sertifikat (7).png", alt: "Sertificate" },
+                { src: "/assets/img/sertificate/sertifikat (8).png", alt: "Sertificate" },
+                { src: "/assets/img/sertificate/sertifikat (9).png", alt: "Sertificate" },
+                { src: "/assets/img/sertificate/sertifikat (10).png", alt: "Sertificate" },
+                { src: "/assets/img/sertificate/sertifikat (11).png", alt: "Sertificate" },
+                { src: "/assets/img/sertificate/sertifikat (12).png", alt: "Sertificate" },
+                { src: "/assets/img/sertificate/sertifikat (13).png", alt: "Sertificate" },
+                { src: "/assets/img/sertificate/sertifikat (14).png", alt: "Sertificate" },
+                { src: "/assets/img/sertificate/sertifikat (15).png", alt: "Sertificate" },
+                { src: "/assets/img/sertificate/sertifikat (16).png", alt: "Sertificate" },
+                { src: "/assets/img/sertificate/sertifikat (17).png", alt: "Sertificate" },
+                { src: "/assets/img/sertificate/sertifikat (18).png", alt: "Sertificate" },
+                { src: "/assets/img/sertificate/sertifikat (19).png", alt: "Sertificate" },
+                { src: "/assets/img/sertificate/sertifikat (20).png", alt: "Sertificate" },
+                { src: "/assets/img/sertificate/sertifikat (21).png", alt: "Sertificate" },
+                { src: "/assets/img/sertificate/sertifikat (22).png", alt: "Sertificate" },
+                { src: "/assets/img/sertificate/sertifikat (23).png", alt: "Sertificate" },
+                { src: "/assets/img/sertificate/sertifikat (24).png", alt: "Sertificate" },
+                { src: "/assets/img/sertificate/sertifikat (25).png", alt: "Sertificate" },
+                { src: "/assets/img/sertificate/sertifikat (26).png", alt: "Sertificate" },
+                { src: "/assets/img/sertificate/sertifikat (27).png", alt: "Sertificate" },
+                { src: "/assets/img/sertificate/sertifikat (28).png", alt: "Sertificate" },
+                { src: "/assets/img/sertificate/sertifikat (29).png", alt: "Sertificate" },
+                { src: "/assets/img/sertificate/sertifikat (30).png", alt: "Sertificate" },
+                { src: "/assets/img/sertificate/sertifikat (31).png", alt: "Sertificate" },
+                { src: "/assets/img/sertificate/sertifikat (32).png", alt: "Sertificate" },
+                { src: "/assets/img/sertificate/sertifikat (33).png", alt: "Sertificate" },
+                { src: "/assets/img/sertificate/sertifikat (34).png", alt: "Sertificate" },
+                { src: "/assets/img/sertificate/sertifikat (35).png", alt: "Sertificate" },
+                { src: "/assets/img/sertificate/sertifikat (36).png", alt: "Sertificate" },
+                { src: "/assets/img/sertificate/sertifikat (37).png", alt: "Sertificate" },
+                { src: "/assets/img/sertificate/sertifikat (38).png", alt: "Sertificate" },
+                { src: "/assets/img/sertificate/sertifikat (39).png", alt: "Sertificate" },
             ];
 
-            // Membuat elemen design
             designs.forEach(design => {
                 $('#designs').append(`
             <a href="#">
-                <div class="relative object-cover object-center overflow-hidden rounded-lg aspect-video">
+                <div class="relative object-cover object-center overflow-hidden rounded-lg">
                     <img src="${design.src}" alt="${design.alt}">
+                    <a href="${design.src}">
                     <div class="absolute bottom-0 left-0 right-0 p-3 text-center bg-black/30">
-                        <p class="flex items-center justify-center h-full font-bold text-white">Coming Soon</p>
+                        <span class="flex items-center justify-center h-full font-bold text-white">View</span>
                     </div>
+                    </a>
                 </div>
             </a>
         `);
@@ -366,217 +393,6 @@
         `);
             });
 
-            // Data gambar sertifikat 41x
-            const certificates = [
-                {
-                    href: "assets/img/sertificate/sertifikat (1).png",
-                    src: "assets/img/sertificate/sertifikat (1).png",
-                    alt: "sertifikat (1).png"
-                },
-                {
-                    href: "assets/img/sertificate/sertifikat (2).png",
-                    src: "assets/img/sertificate/sertifikat (2).png",
-                    alt: "sertifikat (2).png"
-                },
-                {
-                    href: "assets/img/sertificate/sertifikat (3).png",
-                    src: "assets/img/sertificate/sertifikat (3).png",
-                    alt: "sertifikat (3).png"
-                },
-                {
-                    href: "assets/img/sertificate/sertifikat (4).png",
-                    src: "assets/img/sertificate/sertifikat (4).png",
-                    alt: "sertifikat (4).png"
-                },
-                {
-                    href: "assets/img/sertificate/sertifikat (5).png",
-                    src: "assets/img/sertificate/sertifikat (5).png",
-                    alt: "sertifikat (5).png"
-                },
-                {
-                    href: "assets/img/sertificate/sertifikat (6).png",
-                    src: "assets/img/sertificate/sertifikat (6).png",
-                    alt: "sertifikat (6).png"
-                },
-                {
-                    href: "assets/img/sertificate/sertifikat (7).png",
-                    src: "assets/img/sertificate/sertifikat (7).png",
-                    alt: "sertifikat (7).png"
-                },
-                {
-                    href: "assets/img/sertificate/sertifikat (8).png",
-                    src: "assets/img/sertificate/sertifikat (8).png",
-                    alt: "sertifikat (8).png"
-                },
-                {
-                    href: "assets/img/sertificate/sertifikat (9).png",
-                    src: "assets/img/sertificate/sertifikat (9).png",
-                    alt: "sertifikat (9).png"
-                },
-                {
-                    href: "assets/img/sertificate/sertifikat (10).png",
-                    src: "assets/img/sertificate/sertifikat (10).png",
-                    alt: "sertifikat (10).png"
-                },
-                {
-                    href: "assets/img/sertificate/sertifikat (11).png",
-                    src: "assets/img/sertificate/sertifikat (11).png",
-                    alt: "sertifikat (11).png"
-                },
-                {
-                    href: "assets/img/sertificate/sertifikat (12).png",
-                    src: "assets/img/sertificate/sertifikat (12).png",
-                    alt: "sertifikat (12).png"
-                },
-                {
-                    href: "assets/img/sertificate/sertifikat (13).png",
-                    src: "assets/img/sertificate/sertifikat (13).png",
-                    alt: "sertifikat (13).png"
-                },
-                {
-                    href: "assets/img/sertificate/sertifikat (14).png",
-                    src: "assets/img/sertificate/sertifikat (14).png",
-                    alt: "sertifikat (14).png"
-                },
-                {
-                    href: "assets/img/sertificate/sertifikat (15).png",
-                    src: "assets/img/sertificate/sertifikat (15).png",
-                    alt: "sertifikat (15).png"
-                },
-                {
-                    href: "assets/img/sertificate/sertifikat (16).png",
-                    src: "assets/img/sertificate/sertifikat (16).png",
-                    alt: "sertifikat (16).png"
-                },
-                {
-                    href: "assets/img/sertificate/sertifikat (17).png",
-                    src: "assets/img/sertificate/sertifikat (17).png",
-                    alt: "sertifikat (17).png"
-                },
-                {
-                    href: "assets/img/sertificate/sertifikat (18).png",
-                    src: "assets/img/sertificate/sertifikat (18).png",
-                    alt: "sertifikat (18).png"
-                },
-                {
-                    href: "assets/img/sertificate/sertifikat (19).png",
-                    src: "assets/img/sertificate/sertifikat (19).png",
-                    alt: "sertifikat (19).png"
-                },
-                {
-                    href: "assets/img/sertificate/sertifikat (20).png",
-                    src: "assets/img/sertificate/sertifikat (20).png",
-                    alt: "sertifikat (20).png"
-                },
-                {
-                    href: "assets/img/sertificate/sertifikat (21).png",
-                    src: "assets/img/sertificate/sertifikat (21).png",
-                    alt: "sertifikat (21).png"
-                },
-                {
-                    href: "assets/img/sertificate/sertifikat (22).png",
-                    src: "assets/img/sertificate/sertifikat (22).png",
-                    alt: "sertifikat (22).png"
-                },
-                {
-                    href: "assets/img/sertificate/sertifikat (23).png",
-                    src: "assets/img/sertificate/sertifikat (23).png",
-                    alt: "sertifikat (23).png"
-                },
-                {
-                    href: "assets/img/sertificate/sertifikat (24).png",
-                    src: "assets/img/sertificate/sertifikat (24).png",
-                    alt: "sertifikat (24).png"
-                },
-                {
-                    href: "assets/img/sertificate/sertifikat (25).png",
-                    src: "assets/img/sertificate/sertifikat (25).png",
-                    alt: "sertifikat (25).png"
-                },
-                {
-                    href: "assets/img/sertificate/sertifikat (26).png",
-                    src: "assets/img/sertificate/sertifikat (26).png",
-                    alt: "sertifikat (26).png"
-                },
-                {
-                    href: "assets/img/sertificate/sertifikat (27).png",
-                    src: "assets/img/sertificate/sertifikat (27).png",
-                    alt: "sertifikat (27).png"
-                },
-                {
-                    href: "assets/img/sertificate/sertifikat (28).png",
-                    src: "assets/img/sertificate/sertifikat (28).png",
-                    alt: "sertifikat (28).png"
-                },
-                {
-                    href: "assets/img/sertificate/sertifikat (29).png",
-                    src: "assets/img/sertificate/sertifikat (29).png",
-                    alt: "sertifikat (29).png"
-                },
-                {
-                    href: "assets/img/sertificate/sertifikat (30).png",
-                    src: "assets/img/sertificate/sertifikat (30).png",
-                    alt: "sertifikat (30).png"
-                },
-                {
-                    href: "assets/img/sertificate/sertifikat (31).png",
-                    src: "assets/img/sertificate/sertifikat (31).png",
-                    alt: "sertifikat (31).png"
-                },
-                {
-                    href: "assets/img/sertificate/sertifikat (32).png",
-                    src: "assets/img/sertificate/sertifikat (32).png",
-                    alt: "sertifikat (32).png"
-                },
-                {
-                    href: "assets/img/sertificate/sertifikat (33).png",
-                    src: "assets/img/sertificate/sertifikat (33).png",
-                    alt: "sertifikat (33).png"
-                },
-                {
-                    href: "assets/img/sertificate/sertifikat (34).png",
-                    src: "assets/img/sertificate/sertifikat (34).png",
-                    alt: "sertifikat (34).png"
-                },
-                {
-                    href: "assets/img/sertificate/sertifikat (35).png",
-                    src: "assets/img/sertificate/sertifikat (35).png",
-                    alt: "sertifikat (35).png"
-                },
-                {
-                    href: "assets/img/sertificate/sertifikat (36).png",
-                    src: "assets/img/sertificate/sertifikat (36).png",
-                    alt: "sertifikat (36).png"
-                },
-                {
-                    href: "assets/img/sertificate/sertifikat (37).png",
-                    src: "assets/img/sertificate/sertifikat (37).png",
-                    alt: "sertifikat (37).png"
-                },
-                {
-                    href: "assets/img/sertificate/sertifikat (38).png",
-                    src: "assets/img/sertificate/sertifikat (38).png",
-                    alt: "sertifikat (38).png"
-                },
-                {
-                    href: "assets/img/sertificate/sertifikat (39).png",
-                    src: "assets/img/sertificate/sertifikat (39).png",
-                    alt: "sertifikat (39).png"
-                },
-            ];
-
-            // Membuat elemen sertifikat
-            certificates.forEach(cert => {
-                $('#swiper-wrapper').append(`
-            <div class="swiper-slide">
-                <a href="${cert.href}">
-                    <div class="overflow-hidden rounded-md aspect-[4/3] border border-black">
-                        <img src="${cert.src}" alt="${cert.alt}" class="block object-cover min-w-full min-h-full">
-                    </div>
-                </a>
-            </div>
-        `);
-            });
         });
 
     </script>
